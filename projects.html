@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works | Evin Jacob Subin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="header-logo">
+      <span class="logo-symbol">👾</span> EVIN.DEV
+    </div>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home / About</a>
+      <a href="projects.html" class="nav-link active">Works</a>
+      <a href="contact.html" class="nav-link">Ping Me</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle visual mode">
+      <span class="theme-icon-light">☀️ LIGHT</span>
+      <span class="theme-icon-dark">🌙 DARK</span>
+    </button>
+  </header>
+
+  <!-- Projects Container -->
+  <main class="content-container">
+    <div class="projects-header">
+      <div class="status-sticker">
+        SYSTEM_PORTFOLIO // REGISTRY_LOADED
+      </div>
+      <h1 class="page-title text-glow">BUILDS & PROJECTS</h1>
+      <p class="page-subtitle">A collection of working code, API architectures, and live frontend builds.</p>
+    </div>
+
+    <!-- Works Grid -->
+    <div class="works-grid">
+      
+      <!-- Project 1: Spireclub -->
+      <article class="project-card" style="--card-color: var(--color-blue)">
+        <div class="project-header">
+          <span class="project-category">Agency Website</span>
+          <span class="project-pin">★ PINNED</span>
+        </div>
+        <h2 class="project-title">Spireclub</h2>
+        <p class="project-desc">
+          Premium web development agency website for Kerala local businesses, pinned as the lead portfolio product.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Framer Motion</span>
+          <span class="tag">Vercel</span>
+        </div>
+        <div class="project-links">
+          <a href="https://spireclub.vercel.app/en" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <!-- Project 2: Storvafit -->
+      <article class="project-card" style="--card-color: var(--color-yellow)">
+        <div class="project-header">
+          <span class="project-category">Fitness / AI</span>
+        </div>
+        <h2 class="project-title">Storvafit</h2>
+        <p class="project-desc">
+          A simple all-in-one AI coach to assist you in every task, helping to organize, visualize, and use your fitness data scattered across various apps.
+        </p>
+        <div class="project-tags">
+          <span class="tag">AI Coach</span>
+          <span class="tag">Fitness Data</span>
+          <span class="tag">Visualization</span>
+        </div>
+        <div class="project-links">
+          <a href="https://storvafit.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <!-- Project 3: Farmspire Core System -->
+      <article class="project-card" style="--card-color: var(--color-red)">
+        <div class="project-header">
+          <span class="project-category">Backend System</span>
+        </div>
+        <h2 class="project-title">Farmspire Core</h2>
+        <p class="project-desc">
+          A solid core backend system handling Farmspire operations. Manages and coordinates farm tracking operations and processes.
+        </p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://farmspire-backend-c6ko.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+          <a href="https://github.com/EVINJSUBIN/Farmspire_core_system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code ↗</a>
+        </div>
+      </article>
+
+      <!-- Project 4: Cyberspire Backend -->
+      <article class="project-card" style="--card-color: var(--color-green)">
+        <div class="project-header">
+          <span class="project-category">Backend Application</span>
+        </div>
+        <h2 class="project-title">Cyberspire Backend</h2>
+        <p class="project-desc">
+          The core server engine powering Cyberspire. Configured to handle database updates, authentication, and secure communication transfers.
+        </p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Backend</span>
+          <span class="tag">Express</span>
+        </div>
+        <div class="project-links">
+          <a href="https://cyberspire-backend.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+          <a href="https://github.com/EVINJSUBIN/cyberspire-backend" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2026 EVIN JACOB SUBIN. All rights reserved. Built with HTML & CSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
