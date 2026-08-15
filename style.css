@@ -1,391 +1,176 @@
-/*
-  one theme, big shapes, rough energy.
-*/
-/*
-  Neo Brutalism Preset that i thinks works for me 
-*/
-
-:root {
-  --bg: #f4efe8;
-  --panel: #fffdf7;
-  --panel-2: #f6ddb3;
-  --ink: #141414;
-  --ink-soft: #3d3a37;
-  --line: #141414;
-  --red: #ff6a4d;
-  --yellow: #f8d76a;
-  --blue: #9bd7ff;
-  --green: #cfe8a9;
-  --pink: #f5bfd0;
-  --shadow: 8px 8px 0 #141414;
-}
-
-* { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
-
+/* Beginner Ultra-Minimal CSS */
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--ink);
-  background-color: #f8d76a;
-  display: flex;
-  flex-direction: column;
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  color: #222222;
+  line-height: 1.6;
 }
-
-img { max-width: 100%; display: block; }
 
 .page-bg {
-  position: fixed;
-  inset: 0;
-  background: rgba(248, 20, 3, 0.916);
-  z-index: 0;
+  display: none;
 }
 
-.topbar,
-.main-shell,
-.footer-box {
-  position: relative;
-  z-index: 1;
-}
-
+/* Navigation */
 .topbar {
-  width: min(1180px, calc(100% - 26px));
-  margin: 18px auto 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  padding: 14px 18px;
-  background: rgba(245, 147, 0, 0.941);
-  border: 3px solid var(--line);
-  box-shadow: var(--shadow);
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .brand-box {
-  display: inline-block;
-  padding: 10px 14px;
-  border: 3px solid var(--line);
-  background: var(--panel);
-  font-size: 1.1rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.nav-bunch {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .nav-banana {
-  display: inline-block;
-  padding: 10px 14px;
-  border: 3px solid var(--line);
-  background: var(--panel);
-  color: var(--ink);
   text-decoration: none;
-  font-size: 0.76rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  box-shadow: 4px 4px 0 var(--line);
+  color: #666;
+  margin-left: 12px;
 }
 
 .nav-banana.active,
 .nav-banana:hover {
-  background: var(--yellow);
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--line);
+  color: #000;
+  font-weight: bold;
 }
 
+/* Layout */
 .main-shell {
-  width: min(1180px, calc(100% - 26px));
-  margin: 28px auto 0;
-  display: grid;
-  grid-template-columns: 1.6fr 0.9fr;
-  gap: 24px;
-  align-items: start;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .big-card,
-.mini-card,
-.project-box,
-.page-header-box {
-  background: rgba(255,255,255,0.8);
-  border: 3px solid var(--line);
-  box-shadow: var(--shadow);
-}
-
 .intro-box,
 .contact-box {
-  padding: 26px 24px 22px;
-}
-
-.tiny-label {
-  margin: 0 0 12px;
-  font-size: 0.74rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-
-.big-title {
-  margin: 0;
-  font-size: clamp(3.1rem, 6vw, 7rem);
-  line-height: 0.88;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.big-title span {
-  display: block;
-  color: var(--red);
-  text-shadow: 5px 5px 0 rgba(20,20,20,0.1);
-}
-
-.big-title.smaller {
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
-}
-
-.main-copy {
-  margin-top: 18px;
-  max-width: 620px;
-  font-size: 1.08rem;
-  line-height: 1.7;
-  font-weight: 700;
-  color: var(--ink-soft);
-}
-
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 22px;
-}
-
-.chip {
-  padding: 8px 12px;
-  border: 3px solid var(--line);
-  background: var(--panel);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  flex: 2;
+  min-width: 280px;
 }
 
 .side-stack {
-  display: grid;
-  gap: 18px;
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.mini-card {
-  padding: 22px 20px;
-  background: rgba(255,255,255,0.82);
+/* Headings & Text */
+h1, .big-title {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
 }
 
-.mini-card-warm {
-  background: rgba(248, 215, 106, 0.8);
-}
-
-.mini-head {
-  margin: 0 0 12px;
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
+.tiny-label,
+.mini-head,
+.project-tag {
+  font-size: 0.75rem;
+  color: #777;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  margin-bottom: 6px;
 }
 
-.tiny-list {
-  margin: 0;
-  padding-left: 20px;
-  line-height: 1.8;
-  font-weight: 700;
+.main-copy, p {
+  margin-bottom: 12px;
 }
 
-.mini-text {
-  margin: 0;
-  line-height: 1.7;
-  font-weight: 700;
-  color: var(--ink-soft);
+/* Chips & Links */
+.chip {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.link-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.link-stack a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Grids & Cards */
+.project-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .page-header-box {
   grid-column: 1 / -1;
-  padding: 22px 24px;
+  margin-bottom: 10px;
 }
 
-.info-grid {
-  width: min(1180px, calc(100% - 26px));
-  margin: 24px auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  z-index: 1;
+.project-box,
+.info-box,
+.mini-card {
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 4px;
 }
 
-.info-box {
-  padding: 22px 20px;
-  background: rgba(255,255,255,0.82);
-  border: 3px solid var(--line);
-  box-shadow: var(--shadow);
-  z-index: 1;
+/* Forms & Buttons */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.info-box-warm {
-  background: rgba(248, 215, 106, 0.8);
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: #555;
 }
 
-.project-grid {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-}
-
-.project-box {
-  padding: 22px 18px;
-  background: rgba(255,255,255,0.82);
-}
-
-.box-blue { background: rgba(155, 215, 255, 0.86); }
-.box-yellow { background: rgba(248, 215, 106, 0.85); }
-.box-pink { background: rgba(245, 191, 208, 0.88); }
-.box-green { background: rgba(207, 232, 169, 0.85); }
-
-.project-tag {
-  margin: 0 0 10px;
-  font-size: 0.7rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-
-.project-box h2 {
-  margin: 0 0 10px;
-  font-size: 1.9rem;
-  line-height: 1;
-  font-weight: 900;
-}
-
-.project-box p {
-  margin: 0;
-  line-height: 1.6;
-  font-weight: 700;
-  color: var(--ink-soft);
-}
-
-.tiny-gap {
-  margin-top: 18px;
-  margin-bottom: 18px;
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: inherit;
+  margin-top: 4px;
 }
 
 .link-btn,
 .send-btn {
   display: inline-block;
-  padding: 10px 18px;
-  background: var(--ink);
-  color: white;
-  border: 3px solid var(--line);
+  background: #222;
+  color: #fff;
   text-decoration: none;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  box-shadow: 4px 4px 0 var(--line);
+  padding: 6px 14px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .link-btn:hover,
 .send-btn:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--line);
+  background: #444;
 }
 
-.contact-form {
-  display: grid;
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.contact-form label {
-  display: grid;
-  gap: 8px;
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 3px solid var(--line);
-  padding: 12px 14px;
-  background: #fff;
-  color: var(--ink);
-  font: inherit;
-  font-weight: 700;
-  box-shadow: 4px 4px 0 rgba(20,20,20,0.12);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  background: var(--yellow);
-}
-
-.link-stack {
-  display: grid;
-  gap: 10px;
-}
-
-.link-stack a {
-  width: fit-content;
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: 3px solid var(--ink);
-  font-weight: 800;
-}
-
+/* Footer */
 .footer-box {
-  width: min(1180px, calc(100% - 26px));
-  margin: 28px auto 30px;
-  background: rgba(255,255,255,0.82);
-  border: 3px solid var(--line);
-  box-shadow: var(--shadow);
-  padding: 14px 18px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
   text-align: center;
+  color: #888;
+  font-size: 0.85rem;
 }
-
-.footer-box p {
-  margin: 0;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-}
-
-@media (max-width: 760px) {
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .main-shell {
-    grid-template-columns: 1fr;
-  }
-
-  .big-title {
-    letter-spacing: -0.06em;
-  }
-}
-
-/*
-  This was supposed to be a tiny CSS cleanup.
-  Instead, it became a personality trait. Works anyway.
-*/
