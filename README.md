@@ -13,15 +13,7 @@ my personal site. made with just HTML CSS and a lil bit of JS, no frameworks or 
 
 ## running it locally
 
-no install needed, just open `index.html` in your browser. or if you wanna run a server:
-
-```bash
-python -m http.server
-```
-or
-```bash
-npx serve
-```
+no install needed, just open `index.html` in your browser.
 
 ## files
 
