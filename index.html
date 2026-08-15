@@ -2,124 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="A simple and humble hand written portfolio">
+  <meta name="keywords" content="HTML,CSS,EVINJSUBIN,TECH,portfolio">
+  <meta name="author" content="EVINJSUBIN">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evin Jacob Subin | Builder OS</title>
-  <!-- Google Fonts: VT323 (pixel font) and Outfit (neo-brutalist font) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+  <title>Evin Jacob Subin</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-  <!-- Retro scanline overlay for dark mode -->
-  <div class="scanlines"></div>
+  <div class="page-bg"></div>
 
-  <!-- Header Navigation -->
-  <header class="main-header">
-    <div class="header-logo">
-      <span class="logo-symbol">👾</span> EVIN.DEV
-    </div>
-    <nav class="nav-menu">
-      <a href="index.html" class="nav-link active">Home / About</a>
-      <a href="projects.html" class="nav-link">Works</a>
-      <a href="contact.html" class="nav-link">Ping Me</a>
+  <header class="topbar">
+    <div class="brand-box">Evin</div>
+    <nav class="nav-bunch">
+      <a href="index.html" class="nav-banana active">home</a>
+      <a href="projects.html" class="nav-banana">works</a>
+      <a href="contact.html" class="nav-banana">hello</a>
     </nav>
-    <button id="theme-toggle" class="theme-btn" aria-label="Toggle visual mode">
-      <span class="theme-icon-light">☀️ LIGHT</span>
-      <span class="theme-icon-dark">🌙 DARK</span>
-    </button>
   </header>
 
-  <!-- Main Grid Content -->
-  <main class="content-container">
-    <div class="intro-grid">
-      
-      <!-- Left Hero/About Column -->
-      <section class="hero-section">
-        <div class="status-sticker">
-          SIGNAL_PROFILE_01 // ACTIVE
-        </div>
-        
-        <h1 class="main-title">
-          <span class="text-glow">CLEAR BUILDER</span>
-          <span class="text-accent">SIGNAL.</span>
-        </h1>
-        
-        <div class="hero-card">
-          <p class="hero-tagline">"A portfolio should not just say developer. It should show what is real, what is live, and where to click."</p>
-        </div>
+  <main class="main-shell">
+    <section class="big-card intro-box">
+      <!-- This is the part where the page says: "hello, I made weird things and they mostly work." -->
+      <p class="tiny-label">story time, no cap</p>
+      <h1 class="big-title">hey, i make <span>web stuff</span>.</h1>
 
-        <div class="profile-card">
-          <span class="card-badge">TOP SECRET</span>
-          <h2 class="profile-name">EVIN JACOB SUBIN</h2>
-          <p class="profile-bio">
-            A developer from Kerala building premium websites, AI tools, robotics experiments, and demo-ready systems with a practical visual edge.
-          </p>
-        </div>
-      </section>
+      <p class="main-copy">
+        I started coding when I was 10, probably by pretending I was a hacker and smashing keys like a tiny digital goblin. I kept going, learned a bunch of languages over the years, and now I build websites, tools, and little experiments that are a mix of useful and chaotic.
+      </p>
 
-      <!-- Right Facts & Tenets Column -->
-      <section class="details-section">
-        <h2 class="section-title">SYSTEM SPECS</h2>
-        
-        <!-- Facts Grid -->
-        <div class="facts-grid">
-          <div class="fact-card" style="--card-color: var(--color-yellow)">
-            <span class="fact-icon">📍</span>
-            <div class="fact-info">
-              <span class="fact-label">BASE</span>
-              <span class="fact-value">Kerala, India</span>
-            </div>
-          </div>
-          <div class="fact-card" style="--card-color: var(--color-blue)">
-            <span class="fact-icon">🏆</span>
-            <div class="fact-info">
-              <span class="fact-label">MODE</span>
-              <span class="fact-value">Student Builder</span>
-            </div>
-          </div>
-          <div class="fact-card" style="--card-color: var(--color-red)">
-            <span class="fact-icon">🛠️</span>
-            <div class="fact-info">
-              <span class="fact-label">RANGE</span>
-              <span class="fact-value">Web, AI, Hardware</span>
-            </div>
-          </div>
-          <div class="fact-card" style="--card-color: var(--color-green)">
-            <span class="fact-icon">⚙️</span>
-            <div class="fact-info">
-              <span class="fact-label">OUTPUT</span>
-              <span class="fact-value">Prototype to Demo</span>
-            </div>
-          </div>
-        </div>
+      <p class="main-copy">
+        I’ve studied more than 12 languages in one way or another, which is a dramatic way of saying I was curious and a little too obsessed with making things work. HTML is not really a programming language. CSS is not really a programming language. JavaScript is the one that actually starts the party and moves the buttons around like it owns the room.
+      </p>
 
-        <!-- Tenets Area -->
-        <div class="tenets-container">
-          <h2 class="section-title">CORE TENETS</h2>
-          
-          <div class="tenet-item">
-            <span class="tenet-number">01</span>
-            <p class="tenet-text">I build interfaces that feel simple at first and sharper the longer you stay.</p>
-          </div>
-          
-          <div class="tenet-item">
-            <span class="tenet-number">02</span>
-            <p class="tenet-text">I connect software thinking with AI flows and hardware experiments.</p>
-          </div>
-          
-          <div class="tenet-item">
-            <span class="tenet-number">03</span>
-            <p class="tenet-text">I care about the first impression, the interaction, and the actual working system.</p>
-          </div>
-        </div>
-      </section>
+      <div class="chip-row">
+        <span class="chip">web</span>
+        <span class="chip">ai</span>
+        <span class="chip">hardware</span>
+        <span class="chip">storytelling</span>
+      </div>
+    </section>
 
-    </div>
+    <aside class="side-stack">
+      <div class="mini-card">
+        <p class="mini-head">quick story</p>
+        <ul class="tiny-list">
+          <li>started coding at 3</li>
+          <li>explored 12+ languages</li>
+          <li>still learning weird stuff</li>
+          <li>loves beautiful, useful chaos</li>
+        </ul>
+      </div>
+
+      <div class="mini-card mini-card-warm">
+        <p class="mini-head">fun facts</p>
+        <p class="mini-text">
+          HTML is basically the skeleton. CSS is the outfit. JavaScript is the part that decides to dance. That’s the real story.
+        </p>
+      </div>
+    </aside>
   </main>
 
-  <footer class="main-footer">
-    <p>&copy; 2026 EVIN JACOB SUBIN. All rights reserved. Built with HTML & CSS.</p>
+  <section class="info-grid">
+    <div class="info-box">
+      <p class="mini-head">website links</p>
+      <div class="link-stack">
+        <a href="#">portfolio</a>
+        <a href="#">github</a>
+        <a href="#">projects</a>
+        <a href="#">contact</a>
+      </div>
+    </div>
+
+    <div class="info-box info-box-warm">
+      <p class="mini-head">summary</p>
+      <p class="mini-text">
+        I build simple, clean web experiences that feel human, useful, and a little mischievous. I like turning messy ideas into actual products that someone can click, test, and enjoy.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer-box">
+    <p>© 2026 Evin Jacob Subin — built with html, css, and a little chaos.</p>
   </footer>
 
   <script src="script.js"></script>

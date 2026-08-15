@@ -4,128 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Works | Evin Jacob Subin</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scanlines"></div>
+  <div class="page-bg"></div>
 
-  <!-- Header Navigation -->
-  <header class="main-header">
-    <div class="header-logo">
-      <span class="logo-symbol">👾</span> EVIN.DEV
-    </div>
-    <nav class="nav-menu">
-      <a href="index.html" class="nav-link">Home / About</a>
-      <a href="projects.html" class="nav-link active">Works</a>
-      <a href="contact.html" class="nav-link">Ping Me</a>
+  <header class="topbar">
+    <div class="brand-box">Evin</div>
+    <nav class="nav-bunch">
+      <a href="index.html" class="nav-banana">home</a>
+      <a href="projects.html" class="nav-banana active">works</a>
+      <a href="contact.html" class="nav-banana">hello</a>
     </nav>
-    <button id="theme-toggle" class="theme-btn" aria-label="Toggle visual mode">
-      <span class="theme-icon-light">☀️ LIGHT</span>
-      <span class="theme-icon-dark">🌙 DARK</span>
-    </button>
   </header>
 
-  <!-- Projects Container -->
-  <main class="content-container">
-    <div class="projects-header">
-      <div class="status-sticker">
-        SYSTEM_PORTFOLIO // REGISTRY_LOADED
-      </div>
-      <h1 class="page-title text-glow">BUILDS & PROJECTS</h1>
-      <p class="page-subtitle">A collection of working code, API architectures, and live frontend builds.</p>
-    </div>
+  <main class="main-shell project-shell">
+    <section class="page-header-box">
+      <p class="tiny-label">little collection of actual things i made</p>
+      <h1 class="big-title smaller">projects</h1>
+    </section>
 
-    <!-- Works Grid -->
-    <div class="works-grid">
-      
-      <!-- Project 1: Spireclub -->
-      <article class="project-card" style="--card-color: var(--color-blue)">
-        <div class="project-header">
-          <span class="project-category">Agency Website</span>
-          <span class="project-pin">★ PINNED</span>
+    <div class="project-grid">
+      <article class="project-box box-blue">
+        <p class="project-tag">agency website</p>
+        <h2>Spireclub</h2>
+        <p>A small business site with a cleaner look and a more serious vibe than my usual chaos.</p>
+        <div class="chip-row tiny-gap">
+          <span class="chip">next.js</span>
+          <span class="chip">css</span>
+          <span class="chip">vercel</span>
         </div>
-        <h2 class="project-title">Spireclub</h2>
-        <p class="project-desc">
-          Premium web development agency website for Kerala local businesses, pinned as the lead portfolio product.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Next.js</span>
-          <span class="tag">Tailwind CSS</span>
-          <span class="tag">Framer Motion</span>
-          <span class="tag">Vercel</span>
-        </div>
-        <div class="project-links">
-          <a href="https://spireclub.vercel.app/en" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
-        </div>
+        <a href="https://spireclub.vercel.app/en" target="_blank" rel="noopener noreferrer" class="link-btn">visit</a>
       </article>
 
-      <!-- Project 2: Storvafit -->
-      <article class="project-card" style="--card-color: var(--color-yellow)">
-        <div class="project-header">
-          <span class="project-category">Fitness / AI</span>
+      <article class="project-box box-yellow">
+        <p class="project-tag">ai + fitness</p>
+        <h2>Storvafit</h2>
+        <p>Fitness data in one place, with a simple tool that tries to make sense of all the mess.</p>
+        <div class="chip-row tiny-gap">
+          <span class="chip">ai</span>
+          <span class="chip">ux</span>
+          <span class="chip">dashboard</span>
         </div>
-        <h2 class="project-title">Storvafit</h2>
-        <p class="project-desc">
-          A simple all-in-one AI coach to assist you in every task, helping to organize, visualize, and use your fitness data scattered across various apps.
-        </p>
-        <div class="project-tags">
-          <span class="tag">AI Coach</span>
-          <span class="tag">Fitness Data</span>
-          <span class="tag">Visualization</span>
-        </div>
-        <div class="project-links">
-          <a href="https://storvafit.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
-        </div>
+        <a href="https://storvafit.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-btn">visit</a>
       </article>
 
-      <!-- Project 3: Farmspire Core System -->
-      <article class="project-card" style="--card-color: var(--color-red)">
-        <div class="project-header">
-          <span class="project-category">Backend System</span>
+      <article class="project-box box-pink">
+        <p class="project-tag">backend system</p>
+        <h2>Farmspire Core</h2>
+        <p>A backend setup for coordinated operations and farm tracking stuff without too much drama.</p>
+        <div class="chip-row tiny-gap">
+          <span class="chip">node</span>
+          <span class="chip">api</span>
+          <span class="chip">js</span>
         </div>
-        <h2 class="project-title">Farmspire Core</h2>
-        <p class="project-desc">
-          A solid core backend system handling Farmspire operations. Manages and coordinates farm tracking operations and processes.
-        </p>
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">REST API</span>
-        </div>
-        <div class="project-links">
-          <a href="https://farmspire-backend-c6ko.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
-          <a href="https://github.com/EVINJSUBIN/Farmspire_core_system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code ↗</a>
-        </div>
+        <a href="https://farmspire-backend-c6ko.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn">visit</a>
       </article>
 
-      <!-- Project 4: Cyberspire Backend -->
-      <article class="project-card" style="--card-color: var(--color-green)">
-        <div class="project-header">
-          <span class="project-category">Backend Application</span>
+      <article class="project-box box-green">
+        <p class="project-tag">server app</p>
+        <h2>Cyberspire Backend</h2>
+        <p>A practical server project for auth, updates, and general communication between moving parts.</p>
+        <div class="chip-row tiny-gap">
+          <span class="chip">express</span>
+          <span class="chip">backend</span>
+          <span class="chip">js</span>
         </div>
-        <h2 class="project-title">Cyberspire Backend</h2>
-        <p class="project-desc">
-          The core server engine powering Cyberspire. Configured to handle database updates, authentication, and secure communication transfers.
-        </p>
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">Backend</span>
-          <span class="tag">Express</span>
-        </div>
-        <div class="project-links">
-          <a href="https://cyberspire-backend.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
-          <a href="https://github.com/EVINJSUBIN/cyberspire-backend" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code ↗</a>
-        </div>
+        <a href="https://cyberspire-backend.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn">visit</a>
       </article>
-
     </div>
   </main>
 
-  <footer class="main-footer">
-    <p>&copy; 2026 EVIN JACOB SUBIN. All rights reserved. Built with HTML & CSS.</p>
+  <footer class="footer-box">
+    <p>© 2026 Evin Jacob Subin — no fancy nonsense, just work.</p>
   </footer>
 
   <script src="script.js"></script>
