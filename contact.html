@@ -9,6 +9,11 @@
 <body>
   <div class="page-bg"></div>
 
+  <!--
+    I am finaly geting the old vibes like we used to manualy debug the code,
+    go on stackoverflow or w3schools ai has changed lot of things.
+  -->
+  <!-- Header: basically the little menu bar that says "I have a website and I know where to click." -->
   <header class="topbar">
     <div class="brand-box">Evin</div>
     <nav class="nav-bunch">
@@ -18,6 +23,7 @@
     </nav>
   </header>
 
+  <!-- Main contact section: the part where the website finally asks for a real message instead of pretending to be shy. -->
   <main class="main-shell contact-shell">
     <section class="big-card contact-box">
       <p class="tiny-label">say hi, ask something, or just send a random idea</p>
@@ -26,17 +32,17 @@
       <form class="contact-form" id="mini-form">
         <label>
           name
-          <input type="text" name="name" placeholder="your name" required>
+          <input id="name" type="text" name="name" placeholder="your name" required>
         </label>
 
         <label>
           email
-          <input type="email" name="email" placeholder="your email" required>
+          <input id="email" type="email" name="email" placeholder="your email" required>
         </label>
 
         <label>
           message
-          <textarea name="message" rows="5" placeholder="what you want to build" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="what you want to build" required></textarea>
         </label>
 
         <button type="submit" class="send-btn">send it</button>
