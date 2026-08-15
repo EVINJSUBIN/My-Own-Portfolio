@@ -1,6 +1,9 @@
 /*
   one theme, big shapes, rough energy.
 */
+/*
+  Neo Brutalism Preset that i thinks works for me 
+*/
 
 :root {
   --bg: #f4efe8;
@@ -223,6 +226,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+  z-index: 1;
 }
 
 .info-box {
@@ -230,6 +234,7 @@ img { max-width: 100%; display: block; }
   background: rgba(255,255,255,0.82);
   border: 3px solid var(--line);
   box-shadow: var(--shadow);
+  z-index: 1;
 }
 
 .info-box-warm {
