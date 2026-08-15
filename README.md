@@ -2,7 +2,7 @@
 
 my personal site. made with just HTML CSS and a lil bit of JS, no frameworks or anything.
 
-**[try it here](https://evin.dev)**
+**[try it here](https://evinjsubin.github.io/My-Own-Portfolio/)**
 
 ## what it does
 
