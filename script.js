@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('theme-toggle');
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+
+  const setTheme = (darkMode) => {
+    document.body.classList.toggle('dark-theme', darkMode);
+    if (toggle) toggle.checked = darkMode;
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  };
+
+  setTheme(isDark);
+
+  if (toggle) {
+    toggle.addEventListener('change', (event) => setTheme(event.target.checked));
+  }
+
   const form = document.getElementById('mini-form');
   const status = document.getElementById('form-status');
 
@@ -28,11 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify({
-            name,
-            email,
-            message
-          })
+          body: JSON.stringify({ name, email, message })
         });
 
         if (!response.ok) {
@@ -50,6 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  console.warn('warning: the website is being dramatic again, but it still works.');
 });
