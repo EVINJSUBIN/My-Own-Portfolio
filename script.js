@@ -1,13 +1,3 @@
-/*
-  tiny script, tiny chaos, still useful enough.
-  if this breaks, it's probably just the universe testing my patience.
-*/
-/*
-  I am finaly geting the old vibes like we used to manualy debug the code,
-  go on stackoverflow or w3schools ai has changed lot of things.
-  now we still fix things, but with a little less screaming and a little more coffee.
-*/
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('mini-form');
   const status = document.getElementById('form-status');
